@@ -16,7 +16,7 @@ body {
   --chat-content-width: min(760px, calc(100% - 40px));
 }
 
-.chatgpt-shell {
+.billyllm-shell {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
@@ -25,7 +25,7 @@ body {
     linear-gradient(180deg, #23242a 0%, #1c1d22 100%);
 }
 
-.chatgpt-bg-billy {
+.billyllm-bg-billy {
   position: fixed;
   left: -140px;
   bottom: -80px;
@@ -38,7 +38,7 @@ body {
   z-index: 0;
 }
 
-.chatgpt-panel {
+.billyllm-panel {
   position: relative;
   z-index: 1;
   width: min(1280px, 100%);
@@ -48,7 +48,7 @@ body {
   grid-template-rows: auto 1fr auto auto;
 }
 
-.chatgpt-header {
+.billyllm-header {
   display: flex;
   align-items: center;
   height: 52px;
@@ -57,23 +57,24 @@ body {
   padding: 0;
 }
 
-.chatgpt-header h1 {
+.billyllm-header h1 {
   margin: 0;
   font-size: 38px;
-  font-weight: 500;
+  font-family: var(--font-tangerine), "Times New Roman", serif;
+  font-weight: 400;
   letter-spacing: -0.2px;
   transform: scale(0.42);
   transform-origin: left center;
 }
 
-.chatgpt-messages {
+.billyllm-messages {
   width: var(--chat-content-width);
   margin: 0 auto;
   padding: 36px 0 160px;
   overflow-y: auto;
 }
 
-.chatgpt-messages-empty {
+.billyllm-messages-empty {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +150,7 @@ body {
   font-size: 13px;
 }
 
-.chatgpt-composer {
+.billyllm-composer {
   position: sticky;
   bottom: 20px;
   z-index: 3;
@@ -210,20 +211,20 @@ body {
 }
 
 @media (max-width: 700px) {
-  .chatgpt-header {
+  .billyllm-header {
     width: calc(100% - 32px);
   }
 
-  .chatgpt-bg-billy {
+  .billyllm-bg-billy {
     bottom: -40px;
   }
 
-  .chatgpt-messages {
+  .billyllm-messages {
     width: calc(100% - 32px);
     padding: 20px 0 140px;
   }
 
-  .chatgpt-composer {
+  .billyllm-composer {
     width: calc(100% - 32px);
     bottom: 10px;
     margin-bottom: 10px;

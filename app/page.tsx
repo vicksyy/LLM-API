@@ -84,15 +84,15 @@ export default function Home() {
   }
 
   return (
-    <main className="chatgpt-shell">
-      <div className="chatgpt-bg-billy" aria-hidden="true" />
-      <div className="chatgpt-panel">
-        <header className="chatgpt-header">
+    <main className="billyllm-shell">
+      <div className="billyllm-bg-billy" aria-hidden="true" />
+      <div className="billyllm-panel">
+        <header className="billyllm-header">
           <h1>BillyLLM</h1>
         </header>
 
         <section
-          className={`chatgpt-messages ${messages.length === 0 ? "chatgpt-messages-empty" : ""}`}
+          className={`billyllm-messages ${messages.length === 0 ? "billyllm-messages-empty" : ""}`}
         >
           {messages.length === 0 && (
             <div className="msg-row assistant">
@@ -125,7 +125,7 @@ export default function Home() {
 
         {errorMsg && <div className="chat-error">{errorMsg}</div>}
 
-        <form onSubmit={handleSubmit} className="chatgpt-composer">
+        <form onSubmit={handleSubmit} className="billyllm-composer">
           <button type="button" className="composer-icon-btn" aria-label="Adjuntar">
             +
           </button>
